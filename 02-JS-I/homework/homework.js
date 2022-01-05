@@ -28,46 +28,54 @@ const nuevoModulo = 21 % 5 === 1;
 function devolverString(str) {
   // "Return" la string provista: str
   // Tu código:
-  
+  return (str)
 }
 
 function suma(x, y) {
   // "x" e "y" son números
   // Suma "x" e "y" juntos y devuelve el valor
   // Tu código:
-  
+  return x + y;
 }
 
 function resta(x, y) {
   // Resta "y" de "x" y devuelve el valor
   // Tu código:
-  
+  return (x - y);
 }
 
 function multiplica(x, y) {
   // Multiplica "x" por "y" y devuelve el valor
   // Tu código:
-  
+  return x * y;
 }
 
 function divide(x, y) {
   // Divide "x" entre "y" y devuelve el valor
   // Tu código:
-  
+  return x / y;
 }
 
 function sonIguales(x, y) {
   // Devuelve "true" si "x" e "y" son iguales
   // De lo contrario, devuelve "false"
   // Tu código:
-  
+  if (x=== y){
+    return true
+  } else{
+    return false
+  }
 }
 
 function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-  
+  if (str1.length === str2.length){
+    return true;
+  } else {
+    return false;
+  }
 
 }
 
@@ -167,7 +175,7 @@ function esPositivo(numero) {
   //Si el número es 0, devuelve false
   if(numero > 0){
     return "Es positivo"
-  }else if(num < 0){
+  }else if(numero < 0){
     return "Es negativo"
   } else {
     return false
@@ -231,13 +239,13 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-  let letra1= letra.toLowerCase() // Modifica cualquier letra ingresa a minuscula
+  
   if(letra.length > 1){
-    return "Dato incorrecto"
-  } else if(letra1 ==a ||letra1 ==e ||letra1 ==i ||letra1 ==o ||letra1 ==u ){
-    return "Es vocal"
+    return "Dato incorrecto";
+  } else if(letra === "a" ||letra === "e" ||letra === "i" ||letra === "o" ||letra === "u" ){
+    return "Es vocal";
   }else {
-    return "Dato Incorrecto"
+    return "Dato incorrecto";
   }
 }
 
